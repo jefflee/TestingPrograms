@@ -5,7 +5,12 @@ VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringEquals", "StringEquals\StringEquals.csproj", "{8A156ED8-9534-46FE-9595-B52840D95DCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingPrograms", "TestingPrograms\TestingPrograms.csproj", "{57F786FB-8503-4ACC-9CB1-F595D9835D0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestingPrograms", "TestingPrograms\TestingPrograms.csproj", "{57F786FB-8503-4ACC-9CB1-F595D9835D0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A6890D5E-806A-4985-AB59-1A029C8BDD2A}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
