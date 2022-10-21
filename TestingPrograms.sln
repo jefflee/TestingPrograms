@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqNetCore7", "LinqNetCore7\LinqNetCore7.csproj", "{DF606309-C181-44F5-8F84-299992B0063C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{57F786FB-8503-4ACC-9CB1-F595D9835D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57F786FB-8503-4ACC-9CB1-F595D9835D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57F786FB-8503-4ACC-9CB1-F595D9835D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF606309-C181-44F5-8F84-299992B0063C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF606309-C181-44F5-8F84-299992B0063C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF606309-C181-44F5-8F84-299992B0063C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF606309-C181-44F5-8F84-299992B0063C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
