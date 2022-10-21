@@ -6,3 +6,5 @@ TestingPrograms/obj/
 TestingPrograms.sln.DotSettings.user
 LinqNetCore7/bin/
 LinqNetCore7/obj/
+AutoFixture.Tests/bin/
+AutoFixture.Tests/obj/
