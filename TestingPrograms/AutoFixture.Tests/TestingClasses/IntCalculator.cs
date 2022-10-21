@@ -1,4 +1,4 @@
-﻿namespace AutoFixture.Tests.TestingClasses
+﻿namespace TestingPrograms.AutoFixture.Tests.TestingClasses
 {
     public class IntCalculator
     {

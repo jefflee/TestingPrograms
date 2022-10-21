@@ -1,6 +1,7 @@
-using AutoFixture.Tests.TestingClasses;
+using AutoFixture;
+using TestingPrograms.AutoFixture.Tests.TestingClasses;
 
-namespace AutoFixture.Tests
+namespace TestingPrograms.AutoFixture.Tests
 {
     public class FirstTests
     {
