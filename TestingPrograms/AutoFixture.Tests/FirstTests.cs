@@ -20,7 +20,7 @@ namespace TestingPrograms.AutoFixture.Tests
             sut.Subtract(1);
 
             // assert
-            Assert.True(sut.Value < 0);
+            sut.Value.Should().BeNegative();
         }
 
         [Test]
@@ -34,7 +34,7 @@ namespace TestingPrograms.AutoFixture.Tests
             sut.Subtract(fixture.Create<int>());
 
             // assert
-            Assert.True(sut.Value < 0);
+            sut.Value.Should().BeNegative();
         }
 
         [Test]
@@ -49,7 +49,7 @@ namespace TestingPrograms.AutoFixture.Tests
             sut.Subtract(fixture.Create<int>());
 
             // assert
-            Assert.True(sut.Value < 0);
+            sut.Value.Should().BeNegative();
         }
     }
 }
