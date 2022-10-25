@@ -7,7 +7,7 @@ namespace TestingPrograms.AutoFixture.Tests
 {
     public class AnonymousDataTests
     {
-        private string _separator = new String('-', 50);
+        private readonly string _separator = new String('-', 50);
 
         [Test]
         public void AutoFixture_Create_GenerateTestingData()
