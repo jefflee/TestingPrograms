@@ -1,6 +1,7 @@
 ﻿using AutoFixture;
 using AutoFixture.AutoMoq;
 using AutoFixture.NUnit3;
+using TestingPrograms.AutoFixture.Tests.AutoFixtureGenerators;
 
 namespace TestingPrograms.AutoFixture.Tests.Attributes
 {
@@ -8,7 +9,12 @@ namespace TestingPrograms.AutoFixture.Tests.Attributes
     public sealed class AutoMoqDataAttribute : AutoDataAttribute
     {
         public AutoMoqDataAttribute()
-            : base(() => new Fixture().Customize(new AutoMoqCustomization()))
+            : base(() =>
+            {
+                var fixture = new Fixture().Customize(new AutoMoqCustomization());
+                fixture.Customizations.Add(new AirportCodeStringPropertyGenerator());
+                return fixture;
+            })
         {
         }
     }
