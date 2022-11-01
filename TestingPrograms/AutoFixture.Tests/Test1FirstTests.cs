@@ -3,7 +3,7 @@ using TestingPrograms.AutoFixture.Tests.TestingClasses;
 
 namespace TestingPrograms.AutoFixture.Tests
 {
-    public class FirstTests
+    public class Test1FirstTests
     {
         [SetUp]
         public void Setup()

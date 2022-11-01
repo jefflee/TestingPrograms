@@ -5,7 +5,7 @@ using TestingPrograms.AutoFixture.Tests.TestingClasses;
 
 namespace TestingPrograms.AutoFixture.Tests
 {
-    public class AnonymousDataTests
+    public class Test2AnonymousDataTests
     {
         private readonly string _separator = new String('-', 50);
 
@@ -46,7 +46,7 @@ namespace TestingPrograms.AutoFixture.Tests
         }
 
         [Test]
-        public void AutoFixture_CreateMany_GenerateTestingData()
+        public void AutoFixture_CreateMany_GenerateIEnumerableCollection()
         {
             var fixture = new Fixture();
             // Default is creating 3 elements.
@@ -60,7 +60,7 @@ namespace TestingPrograms.AutoFixture.Tests
         }
 
         [Test]
-        public void AutoFixture_AddMany_GenerateTestingData()
+        public void AutoFixture_AddMany_GenerateIList()
         {
             var fixture = new Fixture();
 
@@ -75,16 +75,17 @@ namespace TestingPrograms.AutoFixture.Tests
             intList.Count.Should().Be(10);
             PrintList(intList);
 
-            // append 5 elements which are 100
+            // Append 5 elements which are 100
             fixture.RepeatCount = 5;
             fixture.AddManyTo(intList, () => (int)1E+6); // or 1_000_000. 1 million.
             intList.Count.Should().Be(15);
             PrintList(intList);
 
-            void PrintList(IEnumerable<int> intList)
+            void PrintList(IEnumerable<int> list)
             {
-                Console.WriteLine($"Integer List Count={intList.Count()}");
-                foreach (int integer in intList)
+                var integers = list.ToList();
+                Console.WriteLine($"Integer List Count={integers.Count}");
+                foreach (int integer in integers)
                 {
                     Console.WriteLine(integer);
                 }

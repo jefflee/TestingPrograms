@@ -4,7 +4,7 @@ using TestingPrograms.AutoFixture.Tests.TestingClasses;
 
 namespace TestingPrograms.AutoFixture.Tests
 {
-    public class CustomizingObjectCreation
+    public class Test3CustomizingObjectCreation
     {
         [Test]
         public void Create_Success_CustomizeSomeFields()

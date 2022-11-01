@@ -5,7 +5,7 @@ using TestingPrograms.AutoFixture.Tests.TestingClasses;
 
 namespace TestingPrograms.AutoFixture.Tests
 {
-    public class CustomizationDemos
+    public class Test4CustomizationDemos
     {
         [Test]
         public void CreateDateTime_Success_GetCurrentDateTime()
