@@ -4,7 +4,7 @@ using TestingPrograms.AutoFixture.Tests.TestingClasses;
 
 namespace TestingPrograms.AutoFixture.Tests
 {
-    public class ParameterizedTests
+    public class Test5ParameterizedTests
     {
         [Test]
         [AutoData]

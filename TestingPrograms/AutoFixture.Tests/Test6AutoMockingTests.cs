@@ -7,7 +7,7 @@ using TestingPrograms.AutoFixture.Tests.TestingClasses;
 
 namespace TestingPrograms.AutoFixture.Tests
 {
-    public class AutoMockingTests
+    public class Test6AutoMockingTests
     {
         [Test]
         public void SendEmailToGateway_Success_WithManualMoq()
