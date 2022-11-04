@@ -1,5 +1,8 @@
-﻿namespace TestingPrograms.AutoFixture.Tests.TestingClasses
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace TestingPrograms.AutoFixture.Tests.TestingClasses
 {
+    [ExcludeFromCodeCoverage]
     public class FlightDetails
     {
         private string _arrivalAirportCode;
