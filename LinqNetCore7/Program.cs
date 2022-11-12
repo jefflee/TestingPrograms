@@ -4,5 +4,15 @@
 using BenchmarkDotNet.Running;
 using LinqNetCore7;
 
-BenchmarkRunner.Run<Benchmarks>();
+namespace StringEquals
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            BenchmarkRunner.Run<Benchmarks>();
+        }
+    }
+}
+
 
