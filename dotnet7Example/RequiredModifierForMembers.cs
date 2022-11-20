@@ -5,6 +5,10 @@ namespace Dotnet7Example
     [TestFixture]
     public class RequiredModifierForMembers
     {
+        /// <summary>
+        /// required modifier (C# Reference)
+        /// https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/required
+        /// </summary>
         [SetUp]
         public void NewPerson_Success_PersonHasSomeRequiredMembers()
         {
