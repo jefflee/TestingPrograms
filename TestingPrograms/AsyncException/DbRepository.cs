@@ -7,6 +7,7 @@ namespace TestingPrograms.AsyncException
     {
         public async Task<String> GetStringAsync()
         {
+            // do something async here.
             throw new NotImplementedException("This is not implemented");
         }
 
