@@ -65,8 +65,13 @@
         private static async Task AddToHashSetAsync(int k)
         {
             await Task.Delay(10);
+
+            // use lock to solve this problem.
+            //lock (_hashSet)
+            //{
             _hashSet.Add(k);
             Console.WriteLine("AddToHashSetAsync(). k=" + k);
+            //}
         }
     }
 }
