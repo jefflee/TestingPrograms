@@ -1,6 +1,4 @@
-﻿using BenchmarkDotNet.Running;
-
-namespace TestingPrograms.StringReplacement
+﻿namespace TestingPrograms.StringReplacement
 {
     [TestFixture]
     public class StringReplacementTests
@@ -19,12 +17,6 @@ namespace TestingPrograms.StringReplacement
             var stringReplacement = new MyCore.StringReplacement.StringReplacement();
             var result = stringReplacement.ReplaceWithALoop(input, string.Empty);
             result.Should().Be(expectation);
-        }
-
-        [Test, Explicit]
-        public void Benchmarks()
-        {
-            BenchmarkRunner.Run<Benchmarks>();
         }
     }
 }

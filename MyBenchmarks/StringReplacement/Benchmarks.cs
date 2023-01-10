@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 
-namespace TestingPrograms.StringReplacement
+namespace MyBenchmarks.StringReplacement
 {
     [MemoryDiagnoser(false)]
     public class Benchmarks
