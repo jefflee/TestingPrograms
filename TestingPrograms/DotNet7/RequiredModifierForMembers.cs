@@ -9,7 +9,7 @@ namespace Dotnet7Example
         /// required modifier (C# Reference)
         /// https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/required
         /// </summary>
-        [SetUp]
+        [Test]
         public void NewPerson_Success_PersonHasSomeRequiredMembers()
         {
             var p = new Person() { FirstName = "Eric", LastName = "Clapton" };

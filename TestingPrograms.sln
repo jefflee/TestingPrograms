@@ -14,11 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqNetCore7", "LinqNetCore7\LinqNetCore7.csproj", "{DF606309-C181-44F5-8F84-299992B0063C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet7Example", "Dotnet7Example\Dotnet7Example.csproj", "{045F8F9F-3E37-4A25-9C21-D4966E4AC559}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBenchmarks", "MyBenchmarks\MyBenchmarks.csproj", "{35FDEF8A-5389-4259-A3FA-656A33036663}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBenchmarks", "MyBenchmarks\MyBenchmarks.csproj", "{35FDEF8A-5389-4259-A3FA-656A33036663}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCore", "MyCore\MyCore.csproj", "{7A540DA9-B78D-48AD-B6C2-45C7408F4C82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCore", "MyCore\MyCore.csproj", "{7A540DA9-B78D-48AD-B6C2-45C7408F4C82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,10 +36,6 @@ Global
 		{DF606309-C181-44F5-8F84-299992B0063C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF606309-C181-44F5-8F84-299992B0063C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF606309-C181-44F5-8F84-299992B0063C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{045F8F9F-3E37-4A25-9C21-D4966E4AC559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{045F8F9F-3E37-4A25-9C21-D4966E4AC559}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{045F8F9F-3E37-4A25-9C21-D4966E4AC559}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{045F8F9F-3E37-4A25-9C21-D4966E4AC559}.Release|Any CPU.Build.0 = Release|Any CPU
 		{35FDEF8A-5389-4259-A3FA-656A33036663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{35FDEF8A-5389-4259-A3FA-656A33036663}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35FDEF8A-5389-4259-A3FA-656A33036663}.Release|Any CPU.ActiveCfg = Release|Any CPU

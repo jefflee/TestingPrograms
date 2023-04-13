@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Dotnet7Example
+namespace TestingPrograms.DotNet7
 {
     [TestFixture]
     public class StopwatchTests
