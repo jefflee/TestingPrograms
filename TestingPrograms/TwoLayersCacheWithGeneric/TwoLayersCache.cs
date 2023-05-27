@@ -33,21 +33,26 @@ internal class TwoLayersCache
     public async Task<T?> GetContentAsync<T>(string key)
     {
         var isMemoryCacheExist = _memoryCache.TryGetValue(key, out CacheWrapper<T>? content);
-        if (!isMemoryCacheExist)
+        if (isMemoryCacheExist)
         {
-            var distributedCacheData = await _distributedCache.GetStringAsync(key).ConfigureAwait(false);
-            if (distributedCacheData != null)
+            return content!.CacheObject;
+        }
+
+        var distributedCacheData = await _distributedCache.GetStringAsync(key).ConfigureAwait(false);
+        if (distributedCacheData != null)
+        {
+            content = JsonSerializer.Deserialize<CacheWrapper<T>?>(distributedCacheData);
+
+
+            if (content != null)
             {
-                content = JsonSerializer.Deserialize<CacheWrapper<T>>(distributedCacheData);
-                if (content != null)
-                {
-                    var memoryCacheEntryOptions = new MemoryCacheEntryOptions();
-                    memoryCacheEntryOptions.SetAbsoluteExpiration(content.AbsoluteExpirationTime);
-                    _memoryCache.Set(key, content, memoryCacheEntryOptions);
-                }
+                var memoryCacheEntryOptions = new MemoryCacheEntryOptions();
+                memoryCacheEntryOptions.SetAbsoluteExpiration(content.AbsoluteExpirationTime);
+                _memoryCache.Set(key, content, memoryCacheEntryOptions);
+                return content!.CacheObject;
             }
         }
 
-        return content!.CacheObject == null ? default : content!.CacheObject;
+        return default;
     }
 }
