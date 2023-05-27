@@ -11,10 +11,9 @@ namespace LinqNetCore7
     [MemoryDiagnoser(false)]
     public class Benchmarks
     {
-        [Params(1000)]
-        public int Size { get; set; }
+        private IEnumerable<int> _items = new List<int>();
 
-        private IEnumerable<int> _items;
+        [Params(1000)] public int Size { get; set; }
 
         [GlobalSetup]
         public void Setup()
@@ -23,15 +22,27 @@ namespace LinqNetCore7
         }
 
         [Benchmark]
-        public int Min() => _items.Min();
+        public int Min()
+        {
+            return _items.Min();
+        }
 
         [Benchmark]
-        public int Max() => _items.Max();
+        public int Max()
+        {
+            return _items.Max();
+        }
 
         [Benchmark]
-        public double Average() => _items.Average();
+        public double Average()
+        {
+            return _items.Average();
+        }
 
         [Benchmark]
-        public int Sum() => _items.Sum();
+        public int Sum()
+        {
+            return _items.Sum();
+        }
     }
 }
