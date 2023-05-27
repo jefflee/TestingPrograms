@@ -5,12 +5,11 @@ namespace TestingPrograms.AsyncException
     [TestFixture]
     internal class DbRepositoryTest
     {
-
         [Test]
         public void CallingWithResult_Exception_BothCheckCanBePassed()
         {
             var repository = new DbRepository();
-            Action act = () => repository.CallingWithResult();
+            var act = () => repository.CallingWithResult();
             using (new AssertionScope())
             {
                 act.Should().Throw<AggregateException>()
@@ -36,7 +35,7 @@ namespace TestingPrograms.AsyncException
                 ex.Message.Should().Be("One or more errors occurred. (This is not implemented)");
 
                 // Inner Exception type is NotImplementedException
-                Exception innerEx = ex!.InnerException;
+                var innerEx = ex.InnerException!;
                 innerEx!.GetType().Should().Be<NotImplementedException>();
                 innerEx.Message.Should().Be("This is not implemented");
             }
