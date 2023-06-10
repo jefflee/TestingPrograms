@@ -1,6 +1,9 @@
 ﻿#pragma warning disable CS0169
 namespace TestingPrograms.ProtectedStaticMethod
 {
+    /// <summary>
+    ///     Refer to https://stackoverflow.com/questions/31198984/protected-static-method-visibility
+    /// </summary>
     public abstract class DatabaseAccessor
     {
         protected static object GetDataFromDatabase()
