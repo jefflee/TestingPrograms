@@ -2,7 +2,7 @@
 {
     public class Airport
     {
-        private string _airportCode;
+        private string _airportCode = string.Empty;
 
         public string AirportCode
         {
@@ -14,7 +14,7 @@
             }
         }
 
-        public string AirlineName { get; set; }
+        public string AirlineName { get; set; } = string.Empty;
 
         private void EnsureValidAirportCode(string airportCode)
         {
