@@ -80,7 +80,7 @@ public class Benchmarks
     private static readonly SearchValues<char> Base64SearchVal = SearchValues.Create(Base64Chars);
 
     [Params("dQw4w9WgXcQ", "6iFbuI^pe68k", "dQw4w9WgXcQdQw4w9WgXcQdQw4w9WgXcQdQw4w9WgXcQdQw4w9WgXcQ")]
-    public string ExampleText { get; set; }
+    public string ExampleText { get; set; } = string.Empty;
 
     [Benchmark]
     public bool IsBase64_SearchValues()
