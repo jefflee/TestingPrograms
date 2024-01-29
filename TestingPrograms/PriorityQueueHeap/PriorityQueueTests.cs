@@ -1,4 +1,4 @@
-﻿namespace TestingPrograms.PriorityqueueHeap;
+﻿namespace TestingPrograms.PriorityQueueHeap;
 
 [TestFixture]
 internal class PriorityQueueTests
