@@ -1,4 +1,7 @@
-﻿namespace TestingPrograms.ImageSharp
+﻿using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
+
+namespace TestingPrograms.ImageSharp
 {
     [TestFixture]
     internal class ImageSharpTests
