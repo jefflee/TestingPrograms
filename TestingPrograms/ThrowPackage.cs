@@ -2,8 +2,11 @@
 
 namespace TestingPrograms;
 
+/// <summary>
+///     https://github.com/amantinband/throw
+/// </summary>
 [TestFixture]
-public class ThrowPackage
+internal class ThrowPackage
 {
     [Test]
     public void Throw_DefaultException_WhenTheStringIsFoo()
