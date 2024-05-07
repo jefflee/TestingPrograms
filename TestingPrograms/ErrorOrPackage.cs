@@ -65,7 +65,17 @@ internal class ErrorOrPackage
     {
         if (b == 0)
         {
+            // Refer this for creating ErrorOr instance
+            // https://github.com/amantinband/error-or?tab=readme-ov-file#creating-an-erroror-instance
             return Error.Unexpected(description: "Cannot divide by zero");
+
+            // Can use custom error as well
+            /*
+                var error = Error.Custom(
+                    type: MyErrorTypes.ShouldNeverHappen,
+                    code: "User.ShouldNeverHappen",
+                    description: "A user error that should never happen");
+            */
         }
 
         return a / b;
