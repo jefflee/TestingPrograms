@@ -23,17 +23,17 @@
         [Test]
         public void VerifyPassword_ReturnTrue_WithACorrectPassword()
         {
-            var result = BCryptPasswordHelper.VerifyPassword("Passoword1234", hashedPassword1234);
+            var isMatch = BCryptPasswordHelper.VerifyPassword("Passoword1234", hashedPassword1234);
 
-            result.Should().BeTrue();
+            isMatch.Should().BeTrue();
         }
 
         [Test]
         public void VerifyPassword_ReturnFalse_WithAWrongPassword()
         {
-            var result = BCryptPasswordHelper.VerifyPassword("wrong password", hashedPassword1234);
+            var isMatch = BCryptPasswordHelper.VerifyPassword("wrong password", hashedPassword1234);
 
-            result.Should().BeFalse();
+            isMatch.Should().BeFalse();
         }
     }
 }
